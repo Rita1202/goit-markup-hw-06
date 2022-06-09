@@ -832,10 +832,21 @@ margin-right: 93px;
 /* .wrapper-checkbox:focus-within .wrapper-checkbox-icon{
   background-color: var(--accent-color);
   border: none;
-}
-.wrapper-checkbox:focus-within .user-checkbox-icon{
+} */
+/* .wrapper-checkbox:focus-within .user-checkbox-icon{
     fill: var(--primary-text-color-theme-dark);
 } */
+.user-checkbox-label-policy:hover .wrapper-checkbox-icon{
+  cursor: pointer;
+}
+.form-contact-input-checkbox:focus + .user-checkbox-label-policy > .wrapper-checkbox-icon{
+  background-color: var(--accent-color);
+  border: none;
+}
+.form-contact-input-checkbox:focus + .user-checkbox-label-policy .user-checkbox-icon{
+    fill: var(--primary-text-color-theme-dark);
+
+}
 .wrapper-checkbox-icon{
   display: block;
   width: 16px;
