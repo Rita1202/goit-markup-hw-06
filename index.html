@@ -501,8 +501,14 @@
           <label class="form-contact-label">
             Имя
             <div class="contact-form-input-wrapper">
-              <input class="form-contact-input" type="text" name="name-user" />
-              <svg class="form-contact-icon" width="12" height="12">
+              <input
+                class="form-contact-input"
+                type="text"
+                name="name-user"
+                minlength="2"
+                required
+              />
+              <svg class="form-contact-icon" width="18" height="18  ">
                 <use href="./images/sprite.svg#icon-name"></use>
               </svg>
             </div>
@@ -510,8 +516,13 @@
           <label class="form-contact-label">
             Телефон
             <div class="contact-form-input-wrapper">
-              <input class="form-contact-input" type="tel" name="name-tel" />
-              <svg class="form-contact-icon" width="13" height="13">
+              <input
+                class="form-contact-input"
+                type="tel"
+                name="name-tel"
+                required
+              />
+              <svg class="form-contact-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
             </div>
@@ -523,8 +534,9 @@
                 class="form-contact-input"
                 type="email"
                 name="name-email"
+                required
               />
-              <svg class="form-contact-icon" width="16" height="12">
+              <svg class="form-contact-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
             </div>
@@ -543,13 +555,14 @@
               type="checkbox"
               name="user-checkbox-policy"
               id="user-checkbox-policy"
+              required
             />
             <label
               class="user-checkbox-label-policy"
               for="user-checkbox-policy"
             >
               <span class="wrapper-checkbox-icon">
-                <svg class="user-checkbox-icon" width="11" height="8">
+                <svg class="user-checkbox-icon" width="16" height="15">
                   <use href="./images/sprite.svg#icon-checkbox"></use>
                 </svg>
               </span>
