@@ -471,7 +471,7 @@
         </div>
         <div class="wrapper-third">
           <p class="mailing-description">Подпишитесь на рассылку</p>
-          <form class="mailing-form" action="">
+          <form class="mailing-form">
             <input
               class="mailing-input"
               type="email"
@@ -496,51 +496,57 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="form-user-contact" action="">
+        <form class="form-user-contact">
           <b class="form-user-info">Оставьте свои данные, мы вам перезвоним</b>
-          <label class="form-contact-label">
+          <label class="form-contact-label" for="form-contact-input-name">
             Имя
-            <div class="contact-form-input-wrapper">
-              <input
-                class="form-contact-input"
-                type="text"
-                name="name-user"
-                minlength="2"
-                required
-              />
-              <svg class="form-contact-icon" width="18" height="18  ">
-                <use href="./images/sprite.svg#icon-name"></use>
-              </svg>
-            </div>
           </label>
-          <label class="form-contact-label">
+          <div class="contact-form-input-wrapper">
+            <input
+              class="form-contact-input"
+              id="form-contact-input-name"
+              type="text"
+              name="name-user"
+              minlength="2"
+              required
+            />
+            <svg class="form-contact-icon" width="18" height="18  ">
+              <use href="./images/sprite.svg#icon-name"></use>
+            </svg>
+          </div>
+
+          <label class="form-contact-label" for="form-contact-input-phone">
             Телефон
-            <div class="contact-form-input-wrapper">
-              <input
-                class="form-contact-input"
-                type="tel"
-                name="name-tel"
-                required
-              />
-              <svg class="form-contact-icon" width="18" height="18">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>
-            </div>
           </label>
-          <label class="form-contact-label">
+          <div class="contact-form-input-wrapper">
+            <input
+              class="form-contact-input"
+              id="form-contact-input-phone"
+              type="tel"
+              name="name-tel"
+              required
+            />
+            <svg class="form-contact-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
+
+          <label class="form-contact-label" for="form-contact-input-email">
             Почта
-            <div class="contact-form-input-wrapper">
-              <input
-                class="form-contact-input"
-                type="email"
-                name="name-email"
-                required
-              />
-              <svg class="form-contact-icon" width="18" height="18">
-                <use href="./images/sprite.svg#icon-email"></use>
-              </svg>
-            </div>
           </label>
+          <div class="contact-form-input-wrapper">
+            <input
+              class="form-contact-input"
+              id="form-contact-input-email"
+              type="email"
+              name="name-email"
+              required
+            />
+            <svg class="form-contact-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
+          </div>
+
           <label class="form-contact-label form-contact-label-textarea">
             Комментарий
             <textarea
@@ -566,7 +572,7 @@
                   <use href="./images/sprite.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю &nbsp
+              Соглашаюсь с рассылкой и принимаю &nbsp;
               <a class="user-checkbox-policy-link" href=""
                 >Условия договора</a
               ></label
